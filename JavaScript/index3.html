@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Les boucles</title>
+</head>
+
+<body>
+    <h1>La Boucle while</h1>
+    La boucle while va nous permettre de répeter une série d'action tant qu'une condition est vraie.
+    <script>
+        var x = 0;
+        while (x < 10) {
+            alert('x contient la valeur' + x);
+            x++;// Equivaut à x = c + 1 Incrémentation
+            //x--; Equivaut à x = x - 1 Décrémentation
+        }
+    </script>
+
+    <h1>La boucle do..while</h1>
+    <script>
+        var x = 100;
+        do {
+            alert('x contient la valeur ' + x);
+        } while (x < 10)
+    </script>
+
+    <h1>La boucle for</h1>
+    Elle nous permet de répeter une série d'instructions à partir d'une valeur donnée jusqu'à une certaine valeur
+    seuil.
+
+    <script>
+        for (i = 0; i < 10; i++) {
+            alert('i contient la valeur' + i);
+        }
+    </script>
+
+    <h1>La fonction</h1>
+    C'est un bloc de code qui va éxecuter une tâche précise
+    <script>
+        function multiplication(x, y) {
+            // Le code de la tâche à réaliser
+            alert(x * y);
+
+            return x * y;
+        }
+        var resultat = multiplication(5, 10);
+        resultat += 2;
+        alert(resultat);
+    </script>
+</body>
+
+</html>
